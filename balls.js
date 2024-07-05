@@ -6,9 +6,9 @@
 
 // agein= myAge * dogYear
 // console.log(agein)
-
+let saveEl = document.getElementById("save-el")
 let cuntEl= document.getElementById("cunt")
-console.log(cuntEl)
+console.log(saveEl)
 
 let count = 0
 function increment() {
@@ -18,6 +18,8 @@ function increment() {
 }
 
 function save() {
+        let countStr = count + " - "
+        saveEl.innertext += countStr
         console.log(count)
 }
 save()
